@@ -45,7 +45,7 @@ stages:
         projects: '**/*.csproj'
 
     - task: DotNetCoreCLI@2
-      displayName: 'Build the project - $(buildConfiguration)'
+      displayName: 'Build the project -$(buildConfiguration)'
       inputs:
         command: 'build'
         arguments: '--no-restore --configuration $(buildConfiguration)'
